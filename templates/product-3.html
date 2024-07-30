@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResellShop - product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='product.css') }}">
+    <script src="https://kit.fontawesome.com/a8c88432fd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title-page">
+                <a href="/">ResellShop</a>
+            </div>
+            <div class="indices">
+                <p>
+                    <a href="/">Home</a>
+                </p>
+                <p>
+                    <a href="/shop">Shop</a>
+                </p>
+            </div>
+            <div class="figure">
+                <div class="figure-1">
+                    <a href="/shop">
+                        <button class="button-shop">Shop now</button>
+                    </a>
+                </div>
+                <div class="figure-2">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div class="container">
+            <div class="position">
+                <a href="/shop">
+                    <span>Shop</span>
+                </a>
+                <span>&#160&#160/&#160&#160</span>
+                <span>AirPods (third generazione)</span>
+            </div>
+            <div class="container-view">
+                <div class="slide-img">
+                    <img src="../static/product-3-frontview.png" class="img-view" id="current-img">
+                </div>
+                <div class="info-price-product">
+                    <div class="title-info-price-product">
+                        <h2>AirPods (third<br>generation)</h2>
+                    </div>
+                    <div class="price-info-price-product">
+                        <p>27,99 €</p>
+                    </div>
+                    <div class="spedi-info-price-product">
+                        <p>Special exemption scheme for small business</p>
+                        <a href="#">free shipping</a>
+                    </div>
+                    
+                    <a href="/pay-products-order_sign-email">
+                        <button class="button-info-price-product">Acquista</button>
+                    </a>
+
+                    <div class="term-info-price-product">
+                        <a>Shipping time</a>
+                        <p>&#160</p>
+                        <p>21 - 22 Working days</p>
+                    </div>
+                    <div class="description">
+                        <p>Completely new first-generation AirPods.</p>
+                    </div>
+                </div>
+                <button class="slide-left" onclick="changeImageSlideLeft(3)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slide-right" onclick="changeImageSlideRight(3)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="specifiche">
+            <div class="include">
+                <div class="title-include">
+                    <p>Include</p>
+                </div>
+                <div class="description-include">
+                    <p>charging cable</p>
+                </div>
+            </div>
+            <div class="dati">
+                <div class="group-dati">
+                    <div class="title-group-dati">
+                        <p>Size</p>
+                        <div class="simbol-dati">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <hr width="100%" size="1" color="#dedede" style="margin-bottom: 40px;">
+                </div>
+                <div class="group-dati">
+                    <div class="title-group-dati">
+                        <p>Details</p>
+                        <div class="simbol-dati">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <hr width="100%" size="1" color="#dedede" style="margin-bottom: 40px;">
+                </div>
+                <div class="group-dati">
+                    <div class="title-group-dati">
+                        <p>More</p>
+                        <div class="simbol-dati">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <hr width="100%" size="1" color="#dedede" style="margin-bottom: 40px;">
+                </div>
+            </div>
+        </div>
+        <hr width="80%" size="1" color="black" style="margin: 80px auto">
+    </article>
+    <footer>
+        <div class="contact">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="terms">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Terms of Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <div class="content">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/script_product.js"></script>
+</body>
+</html>

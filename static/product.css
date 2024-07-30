@@ -1,0 +1,386 @@
+:root {
+    --main-color: #000000;
+    --second-color: #505050;
+    --default-img-product-size: 545px;
+}
+
+
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding-top: 80px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.742);;
+    position: fixed; /* Fissa l'header in posizione */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    max-width: 1300px;
+    color: var(--main-color);
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.indices {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.indices a {
+    color: var(--main-color);
+    padding: 20px;
+}
+
+.indices a:hover {
+    text-decoration: underline;
+}
+
+.title-page {
+    margin-right: auto;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.title-page:hover {
+    cursor: pointer;
+}
+
+.figure {
+    margin-left: auto;
+    padding: 20px;
+    column-gap: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.figure-2 a {
+    color: var(--main-color);
+}
+
+.button-shop {
+    width: 160px;
+    height: 37px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--main-color);
+    color: white;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.button-shop:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 80px;
+}
+
+.position {
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.position a {
+    color: var(--main-color);
+}
+
+.position a:hover {
+    text-decoration: underline;
+}
+
+.container-view {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-img {
+    width: var(--default-img-product-size);
+    height: 470px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.img-view {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hiddenR {
+    transform: translateX(100%);
+}
+
+.hiddenL {
+    transform: translateX(-100%);
+}
+
+
+.info-price-product {
+    display: flex;
+    flex-direction: column;
+    color: var(--second-color);
+    text-align: left;
+    padding: 20px;
+}
+
+.title-info-price-product {
+    font-size: 24px;
+    color: var(--main-color);
+    padding-bottom: 30px;
+}
+
+.price-info-price-product {
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.spedi-info-price-product {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.spedi-info-price-product a{
+    color: var(--second-color);
+}
+
+.spedi-info-price-product a:hover{
+    text-decoration: underline;
+}
+
+.button-info-price-product {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    transition: 0.2s;
+    background-color: var(--main-color);
+}
+
+.button-info-price-product:hover {
+    background-color: rgb(226, 226, 226);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.term-info-price-product {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    color: var(--second-color);
+}
+
+.term-info-price-product a {
+    color: var(--main-color);
+}
+
+.description {
+    color: var(--second-color);
+    font-size: 20px;
+}
+
+.slide-left {
+    margin-top: 250px;
+    margin-right: 830px;
+    position: absolute;
+    border: 0;
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+    color: white;
+    background-color: rgb(196, 196, 196);
+    transition: .6s;
+}
+
+.slide-right {
+    margin-top: 250px;
+    margin-left: 50px;
+    text-align: center;
+    position: absolute;
+    border: 0;
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+    color: white;
+    background-color: rgb(196, 196, 196);
+    transition: .6s;
+}
+
+.slide-left:hover {
+    background-color: rgba(184, 184, 184, 0.6);
+    cursor: pointer;
+}
+
+.slide-right:hover {
+    background-color: rgb(184, 184, 184, 0.6);
+    cursor: pointer;
+}
+
+.specifiche {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title-include {
+    font-size: 23px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.description-include {
+    font-size: 23px;
+    color: var(--second-color);
+}
+
+.dati {
+    width: 100%;
+}
+
+.include {
+    width: 50%;
+}
+
+/*Setup group dati*/
+.group-dati {
+    color: var(--main-color);
+    width: 100%;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.group-dati:hover {
+    cursor: pointer;
+}
+
+
+.title-group-dati {
+    display: flex;
+    font-size: 23px;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+}
+
+.simbol-dati {
+    margin-left: auto;
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+footer a {
+    color: var(--main-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav {       
+        height: auto;
+    }
+
+    .indices {
+        flex-direction: column;
+    }
+
+    .title-page, .figure {
+        padding: 10px 0;
+    }
+
+    .figure-2 a{
+        color: var(--main-color);
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .button-shop {
+        width: auto ;
+    }
+
+    .position {
+        flex-direction: column;
+    }
+
+    .container-view {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide-img {
+        padding-right: 0;
+    }
+
+    .info-price-product {
+        padding: 20px 0;
+    }
+
+    .specifiche {
+        padding: 50px 40px;
+    }
+
+    .include {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    ul {
+        padding: 0;
+    }
+}

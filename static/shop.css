@@ -1,0 +1,248 @@
+:root {
+    --main-color: #000000;
+    --default-img-product-size: 400px;
+}
+
+
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding-top: 80px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.742);;
+    position: fixed; /* Fissa l'header in posizione */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    max-width: 1300px;
+    color: var(--main-color);
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.indices {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.indices a{
+    color: var(--main-color);
+    padding: 0 20px;
+}
+
+.indices a:hover {
+    text-decoration: underline;
+}
+
+.title-page {
+    margin-right: auto;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.title-page:hover {
+    cursor: pointer;
+}
+
+.figure {
+    margin-left: auto;
+    padding: 20px;
+    column-gap: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.figure-2 a {
+    color: var(--main-color);
+}
+
+.button-shop {
+    width: 160px;
+    height: 37px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.button-shop:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-article {
+    padding: 20px;
+    font-size: 36px;
+}
+
+.img-product {
+    object-fit: cover;
+    width: var(--default-img-product-size);
+    height: var(--default-img-product-size);
+}
+
+.product-view {
+    width: var(--default-img-product-size);
+    height: 460px;
+    overflow: hidden;
+}
+
+.view-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-description {
+    color: rgb(120, 120, 120);
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-price {
+    color: rgb(120, 120, 120);
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+footer a {
+    color: var(--main-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Media per dispositivi mobili*/
+@media (max-width: 768px) {
+    nav {       
+        height: auto;
+    }
+
+    .indices {
+        flex-direction: column;
+    }
+
+    .title-page, .figure {
+        padding: 10px 0;
+    }
+
+    .figure-2 a{
+        color: var(--main-color);
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .button-shop {
+        width: auto ;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .title-article {
+        font-size: 28px;
+    }
+
+    .img-product {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-view {
+        width: 100%;
+        height: auto;
+    }
+
+    .view-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .product-description, .product-price {
+        font-size: 18px;
+    }
+}
+
+/* Media Queries per dispositivi molto piccoli */
+@media (max-width: 480px) {
+    .indices a {
+        padding: 5px;
+    }
+
+    .title-page {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .figure {
+        padding: 5px;
+        column-gap: 10px;
+    }
+
+    .button-shop {
+        font-size: 16px;
+    }
+
+    .title-article {
+        font-size: 24px;
+    }
+
+    .product-description, .product-price {
+        font-size: 16px;
+    }
+}

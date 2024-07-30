@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResellShop - shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='shop.css') }}">
+    <script src="https://kit.fontawesome.com/a8c88432fd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title-page">
+                <a href="/">ResellShop</a>
+            </div>
+            <div class="indices">
+                <p>
+                    <a href="/">Home</a>
+                </p>
+                <p>
+                    <a href="/shop">Shop</a>
+                </p>
+            </div>
+            <div class="figure">
+                <div class="figure-1">
+                    <a href="/shop">
+                        <button class="button-shop">Shop now</button>
+                    </a>
+                </div>
+                <div class="figure-2">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="container">
+            <div class="title-article">
+                <h1>Products</h1>
+            </div>
+            <div class="view-container">
+                <a href="/product-airpods-1" class="product-view">
+                    <img src="../static/product-1-frontview.png" class="img-product">
+                    <div class="product-description">
+                        <p>AirPods (first generazione)</p>
+                    </div>
+                    <div class="product-price">
+                        <p>17,99 €</p>
+                    </div>
+                </a>
+                <a href="/product-airpods-2" class="product-view">
+                    <img src="../static/product-2-frontview.png" class="img-product">
+                    <div class="product-description">
+                        <p>AirPods (second generazione)</p>
+                    </div>
+                    <div class="product-price">
+                        <p>21,99 €</p>
+                    </div>
+                </a>
+                <a href="/product-airpods-3" class="product-view">
+                    <img src="../static/product-3-frontview.png" class="img-product">
+                    <div class="product-description">
+                        <p>AirPods (third generazione)</p>
+                    </div>
+                    <div class="product-price">
+                        <p>27,99 €</p>
+                    </div>
+                </a>
+            </div>
+            <hr width="100%" size="1" color="black" style="margin: 80px 0px;">
+        </div>
+    </article>
+    <footer>
+        <div class="contact">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="terms">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Terms of Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <div class="content">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

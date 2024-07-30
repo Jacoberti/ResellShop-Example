@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResellShop - home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/a8c88432fd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title-page">
+                <a href="/">ResellShop</a>
+            </div>
+            <div class="indices">
+                <p>
+                    <a href="/">Home</a>
+                </p>
+                <p>
+                    <a href="/shop">Shop</a>
+                </p>
+            </div>
+            <div class="figure">
+                <div class="figure-1">
+                    <a href="/shop">
+                        <button class="button-shop">Shop now</button>
+                    </a>
+                </div>
+                <div class="figure-2">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="container-1">
+            <div class="title-article">
+                <h1>
+                    Low price products
+                </h1>   
+            </div>
+            <img src="../static/main-image-product.png" class="main-image-product">
+
+            <div class="info">
+                <div class="title-info">
+                    <h3>
+                        About Us
+                    </h3>
+                </div>
+                <div class="content-info">
+                    <p>Looking for new products at a low price? Whether it is for personal purpose <br>
+                        or for resale purposes we have the solution for you.</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="title-info">
+                    <h3>
+                        24/7 Support
+                    </h3>
+                </div>
+                <div class="content-info">
+                    <p>If you need help or want clarification we provide 24/7 support</p>
+                </div>
+            </div>
+            <hr width="100%" size="1" color="white" style="margin: 80px 0px;">
+        </div>
+    </article>
+    <footer>
+        <div class="contact">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="terms">
+            <div class="content">
+                <ul>
+                    <li><a href="#">Terms of Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <div class="content">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+</html>

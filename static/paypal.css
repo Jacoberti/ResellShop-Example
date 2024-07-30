@@ -1,0 +1,174 @@
+:root {
+    --main-color: #666;
+    --default-img-product-size: 400px;
+    --bg-color: #F7F9FA;
+}
+
+@font-face {
+    font-family: 'PayPal Regular';
+    src: url("./paypal-sans-big-wisabo/PayPal\ Sans\ Big.ttf");
+}
+
+@font-face {
+    font-family: 'PayPal Light';
+    src: url("./paypal-sans-big-wisabo/PayPal\ Sans\ Big\ Light.ttf");
+}
+
+* {
+    margin: 0;
+    font-family: "PayPal Light", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: white;
+}
+
+nav {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    height: 72px;
+    padding: 30px;
+}
+
+.container-logo {
+    margin-right: auto;
+}
+
+.logo-paypal {
+    width: 102.7px;
+    height: 29px;
+    margin-top: 7px;
+}
+
+article {
+    margin: 50px 0;
+}
+
+.box {
+    background-color: white;
+    max-width: 460px;
+    height: 527.838px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-mini-paypal {
+    width: 32.4px;
+    height: 38.11px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.component-title {
+    text-align: left;
+    font-size: 32px;
+    margin-top: 21.44px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    color: var(--main-color);
+}
+
+.component-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.forgot {
+    color: #0070E0;
+    transition: .25s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.forgot:hover {
+    color: #7FACFF;
+}
+
+.container-personal {
+    margin: 0 auto;
+}
+
+.input-personal {
+    width: 360px;
+    height: 50px;
+    border: 1px solid #9da3a6;
+    border-radius: .357rem;
+    font-size: 1rem;
+    padding: 5px 1em;
+    margin-bottom: 20px;
+}
+
+.component-button {
+    margin: 20px auto;
+}
+
+.button-continue {
+    width: 360px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    background-color: #0070ba;
+    transition: all .25s ease;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.button-continue:hover {
+    background-color: #003087;
+}
+
+footer {
+    background-color: white;
+    height: 74px;
+    display: flex;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.set-copyright {
+    width: 50%;
+}
+
+.set-info {
+    display: flex;
+    font-weight: bold;
+}
+
+.set-info p{
+    display: flex;
+    font-weight: normal;
+}
+
+.set-info a:hover {
+    text-decoration: underline;
+}
